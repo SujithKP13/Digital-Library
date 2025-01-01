@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Library Website</title>
+    <link rel="stylesheet" href="./Styles/Style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="./Styles/openlibrary-logo-tighter.svg" width="30" height="30" class="d-inline-block align-top" alt="Open Library Logo" loading="lazy">
+            Digital Library</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Books</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Authors</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Browse
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Subjects</a>
+                <a class="dropdown-item" href="#">Trending</a>
+                <a class="dropdown-item" href="#">Lists</a>
+                <a class="dropdown-item" href="#">Collections</a>
+                <a class="dropdown-item" href="#">Library Explorer</a>
+                <a class="dropdown-item" href="#">Book Talks</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Contact Us</a>
+              </div>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+    <h1>Welcome to Open Library</h1>
+
+    <div class="welcome-container">
+        <div class="arrow">&lt;</div>
+
+        <div class="card">
+            <img src="./Styles/library_explorer.png" alt="Library Explorer">
+            <h3>Try the virtual Library Explorer</h3>
+            <p>Digital shelves organized like a physical library</p>
+        </div>
+
+        <div class="card">
+            <img src="./Styles/fulltext.png" alt="Fulltext Search">
+            <h3>Try Fulltext Search</h3>
+            <p>Find matching results within the text of millions of books</p>
+        </div>
+
+        <div class="card">
+            <img src="./Styles/librarian.png" alt="Open Librarian">
+            <h3>Be an Open Librarian</h3>
+            <p>Dozens of ways you can help improve the library</p>
+        </div>
+
+        <div class="card">
+            <img src="./Styles/volunteer.png" alt="Volunteer">
+            <h3>Volunteer at Open Library</h3>
+            <p>Discover opportunities to improve the library</p>
+        </div>
+
+        <div class="card">
+            <img src="./Styles/feedback.png" alt="Feedback">
+            <h3>Send Us Feedback</h3>
+            <p>Your feedback will help us improve the library</p>
+        </div>
+
+        <div class="arrow">&gt;</div>
+    </div>
+
+    <div class="trending-book-section">
+        <div class="heading ellipse">Trending Books</div>
+        <div class="d-flex align-items-center">
+            <div class="arrow me-2" onclick="">&lt;</div>
+            <div class="book-list" id ="book-list">
+                <div class="book-item">
+                    <img src="./Styles/Control your mind.jpg" alt="Control Your Mind">
+                    <p>Control Your Mind</p>
+                    <span class="book-status not-in-library">Not in Library</span>
+                </div>
+                <div class="book-item">
+                    <img src="./Styles/Court mist fury.jpg" alt="Court of Mist and Fury">
+                    <p>Court of Mist and Fury</p>
+                    <span class="book-status preview-only">Preview Only</span>
+                </div>
+                <div class="book-item">
+                    <img src="./Styles/Harry potter.jpg" alt="Harry Potter">
+                    <p>Harry Potter</p>
+                    <span class="book-status checked-out">Checked Out</span>
+                </div>
+                <div class="book-item">
+                    <img src="./Styles/Secret language of birthdays.jpg" alt="Secret Language of Birthdays">
+                    <p>Secret Language of Birthdays</p>
+                    <span class="book-status join-waitlist">Join Waitlist</span>
+                </div>
+                <div class="book-item">
+                    <img src="./Styles/Seven husbands of evelyn hugo.jpg" alt="The Seven Husbands">
+                    <p>The Seven Husbands</p>
+                    <span class="book-status not-in-library">Not in Library</span>
+                </div>
+                <div class="book-item">
+                    <img src="./Styles/Game of thrones.jpg" alt="Game of Thrones">
+                    <p>Game of Thrones</p>
+                    <span class="book-status checked-out">Checked Out</span>
+                </div>
+                <div class="book-item">
+                    <img src="./Styles/ELjames.jpg" alt="EL James">
+                    <p>EL James</p>
+                    <span class="book-status join-waitlist">Join Waitlist</span>
+                </div>
+                <div class="book-item">
+                    <img src="./Styles/Red white & royal blue.jpg" alt="Red White & Royal Blue">
+                    <p>Red White & Royal Blue</p>
+                    <span class="book-status not-in-library">Not in Library</span>
+                </div>
+            </div>
+            <div class="arrow ms-2" onclick="">&gt;</div>
+        </div>
+    </div>
+
+    <div class="classic-book-section">
+        <div class="heading ellipse">Classic Books</div>
+        <div class="d-flex align-items-center">
+            <div class="arrow me-2" onclick="">&lt;</div>
+            <div class="book-list" id ="book-list">
+                <div class="book-item">
+                    <img src="./Styles/Dialogues of des morts.jpg" alt="">
+                    <button class="btn btn-primary">Borrow</button>
+                </div>
+                <div class="book-item">
+                    <img src="./Styles/Heart of the west.jpg" alt="">
+                    <button class="btn btn-primary">Read</button>
+                </div>
+                <div class="book-item">
+                    <img src="./Styles/Loti.jpg" alt="">
+                    <button class="btn btn-primary">Read</button>
+                </div>
+                <div class="book-item">
+                    <img src="./Styles/Leaven of love.jpg" alt="">
+                    <button class="btn btn-primary">Read</button>
+                </div>
+                <div class="book-item">
+                    <img src="./Styles/Little and socal aims.jpg" alt="">
+                    <button class="btn btn-primary">Read</button>
+                </div>
+                <div class="book-item">
+                    <img src="./Styles/Youth and bright medusa.jpg" alt="">
+                    <button class="btn btn-primary">Borrow</button>
+                </div>
+                <div class="book-item">
+                    <img src="./Styles/I dont love u anymore.jpg" alt="">
+                    <button class="btn btn-primary">Borrow</button>
+                </div>
+                <div class="book-item">
+                    <img src="./Styles/Lord of the flies.jpg" alt="">
+                    <button class="btn btn-primary">Borrow</button>
+                </div>
+            </div>
+            <div class="arrow ms-2" onclick="">&gt;</div>
+        </div>
+    </div>
+
+    <div class="malayalam-book-section">
+        <div class="heading ellipse">Malayalam Books</div>
+        <div class="d-flex align-items-center">
+            <div class="arrow me-2" onclick="">&lt;</div>
+            <div class="book-list" id ="book-list">
+                <div class="book-item">
+                    <img src="./Styles/aadujeevithame.jpg" alt="">
+                    <button class="btn btn-primary">Borrow</button>
+                </div>
+                <div class="book-item">
+                    <img src="./Styles/alchemist.jpg" alt="">
+                    <button class="btn btn-primary">Read</button>
+                </div>
+                <div class="book-item">
+                    <img src="./Styles/ammaykku.jpg" alt="">
+                    <button class="btn btn-primary">Read</button>
+                </div>
+                <div class="book-item">
+                    <img src="./Styles/kaalamm.jpg" alt="">
+                    <button class="btn btn-primary">Read</button>
+                </div>
+                <div class="book-item">
+                    <img src="./Styles/malayalathinte-suvarna-kadhakal-madhavikutty.jpg" alt="">
+                    <button class="btn btn-primary">Read</button>
+                </div>
+                <div class="book-item">
+                    <img src="./Styles/ram-c-o-anandi.jpg" alt="">
+                    <button class="btn btn-primary">Borrow</button>
+                </div>
+                <div class="book-item">
+                    <img src="./Styles/ettavum-priyappetta-ennodua.jpg" alt="">
+                    <button class="btn btn-primary">Borrow</button>
+                </div>
+                <div class="book-item">
+                    <img src="./Styles/naalukettuw.jpg" alt="">
+                    <button class="btn btn-primary">Borrow</button>
+                </div>
+            </div>
+            <div class="arrow ms-2" onclick="">&gt;</div>
+        </div>
+    </div>
+
+    <div class="authors-container">
+        <div class="heading ellipse">Featured Authors</div>
+        <div class="author-card">
+            <img src="./Styles/Authors/A_ayyappan.JPG" alt="">
+            <h3>A Ayyappan</h3>
+            <p>An Indian Malayalam-language poet in the modernist period. He is considered as the "Icon of anarchism" in Malayalam poetry. He was also an iconoclast</p>
+            <a href="">More</a>
+        </div>
+        <div class="author-card">
+            <img src="./Styles/Authors/George R.R Martin.jpg" alt="">
+            <h3>George R.R Martin</h3>
+            <p>An American author, television writer, and television producer. He is best known as the author of the series of epic fantasy novels A Song of Ice and Fire, which were adapted into the Primetime Emmy Award winning television series Game of Thrones (2011–2019) and its prequel series House of the Dragon (2022–present).</p>
+            <a href="">More</a>
+        </div>
+        <div class="author-card">
+            <img src="./Styles/Authors/JK.Rowling.jpg" alt="">
+            <h3>J.K. Rowling</h3>
+            <p>A British author and philanthropist. She is the author of Harry Potter, a seven-volume fantasy novel series published from 1997 to 2007.</p>
+            <a href="">More</a>
+        </div>
+        <div class="author-card">
+            <img src="./Styles/Authors/Kamala Surayya.jpeg" alt="Author 4">
+            <h3>Kamala Surayya</h3>
+            <p>She is popularly known by her one-time pen name Madhavikutty and married name Kamala Das, was an Indian poet in English as well as an author in Malayalam from Kerala, India. Her fame in Kerala primarily stems from her short stories and autobiography, My Story, whereas her body of work in English, penned under the pseudonym Kamala Das, is renowned for its poems and candid autobiography.</p>
+            <a href="">More</a>
+        </div>
+        <div class="author-card">
+            <img src="./Styles/Authors/MT.jpeg" alt="Author 5">
+            <h3>M.T. Vasudevan Nair</h3>
+            <p>An Indian author, screenplay writer and film director. He was a prolific and versatile writer in modern Malayalam literature, and was one of the masters of post-Independence Indian literature.</p>
+            <a href="">More</a>
+        </div>
+        <div class="author-card">
+            <img src="./Styles/Authors/Nnpillaidrama.jpg" alt="Author 5">
+            <h3>N.N. Pillai</h3>
+            <p>An Indian playwright, actor, theatre director, orator, screenplay writer, lyricist and an I.N.A Freedom fighter.</p>
+            <a href="">More</a>
+        </div>
+        <div class="author-card">
+            <img src="./Styles/Authors/O.Henry.jpg" alt="Author 5">
+            <h3>O. Henry</h3>
+            <p>William Sydney Porter better known by his pen name O. Henry, was an American writer known primarily for his short stories, though he also wrote poetry and non-fiction. His works include "The Gift of the Magi", "The Duplicity of Hargraves", and "The Ransom of Red Chief", as well as the novel Cabbages and Kings.</p>
+            <a href="">More</a>
+        </div>
+        <div class="author-card">
+            <img src="./Styles/Authors/Paulo Coelho.jpeg" alt="Author 5">
+            <h3>Paulo Coelho</h3>
+            <p>A Brazilian lyricist and novelist and a member of the Brazilian Academy of Letters since 2002.[2] His 1988 novel The Alchemist was an international best-seller.</p>
+            <a href="">More</a>
+        </div>
+        <div class="author-card">
+            <img src="./Styles/Authors/Taylor ajenkins Reid.jpg" alt="Author 5">
+            <h3>Taylor Jenkins Reid</h3>
+            <p>An American author best known for her novels The Seven Husbands of Evelyn Hugo, Daisy Jones & the Six, One True Loves, Malibu Rising, and Carrie Soto Is Back.</p>
+            <a href="">More</a>
+        </div>
+        <div class="author-card">
+            <img src="./Styles/Authors/ONV.jpeg" alt="Author 5">
+            <h3>O.N.V. Kurup</h3>
+            <p>Ottaplakkal Neelakandan Velu Kurup known as O. N. V. Kurup was a Malayalam poet and lyricist from Kerala, India, who won the Jnanpith Award, the highest literary award in India for the year 2007.</p>
+            <a href="">More</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Sujith KP Just sample webpage for books With CSS Clipping & Media Queries </p>
+      </footer>
+</body>
+</html>
