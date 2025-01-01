@@ -191,6 +191,31 @@ nav {
     color: #0056b3;
 }
 
+section {
+    padding: 2rem;
+}
+
+.book-display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.circle {
+    clip-path: circle(50%);
+    background-color: #4caf50;
+}
+.polygon {
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    background-color: #ff9800;
+}
+
+.inset {
+    clip-path: inset(10px 20px 10px 20px);
+    background-color: #9c27b0;
+}
+
 footer {
     background-color: #333;
     color: #888585cb;
